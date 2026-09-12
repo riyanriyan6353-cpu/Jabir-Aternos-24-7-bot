@@ -208,26 +208,34 @@ function connectBot() {
     startMovement();
   });
 
-  // ==========================================================
-  // CHAT
-  // ==========================================================
+// ==========================================================
+// CHAT
+// ==========================================================
 
-  bot.on("chat", async (username, message) => {
-    if (!username) return;
+bot.on("message", (jsonMsg) => {
+  try {
+    console.log("[SERVER MESSAGE]", jsonMsg.toString());
+  } catch (error) {
+    console.log("[SERVER MESSAGE] Could not parse message");
+  }
+});
 
-    // Ignore own messages
-    if (
-      bot &&
-      username.toLowerCase() === bot.username.toLowerCase()
-    ) {
-      return;
-    }
+bot.on("chat", async (username, message) => {
+  if (!username) return;
 
-    console.log(`[Chat] ${username}: ${message}`);
+  // Ignore own messages
+  if (
+    bot &&
+    username.toLowerCase() === bot.username.toLowerCase()
+  ) {
+    return;
+  }
 
-    // Admin commands
-    await handleAdminCommand(username, message);
-  });
+  console.log(`[Chat] ${username}: ${message}`);
+
+  // Admin commands
+  await handleAdminCommand(username, message);
+});
 
   // ==========================================================
   // KICK
