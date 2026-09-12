@@ -1,13 +1,13 @@
 {
   "name": "Aternos AFK Bot",
   "bot-account": {
-    "username": "PerzaanLive",
+    "username": "Pagol",
     "password": "",
     "type": "offline"
   },
   "server": {
-    "ip": "YOUR-ATERNOS-SERVER.aternos.me",
-    "port": 25565,
+    "ip": "Multiverse-tNx6.aternos.me",
+    "port": 31907,
     "version": false
   },
   "utils": {
