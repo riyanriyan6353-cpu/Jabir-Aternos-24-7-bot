@@ -1,37 +1,59 @@
 {
-  "bot": {
+  "name": "AFK Bot",
+  "bot-account": {
     "username": "PerzaanLive",
     "password": "",
-    "auth": "offline"
+    "type": "offline"
   },
-
   "server": {
-    "host": "Multiverse-tNx6.aternos.me",
+    "ip": "Multiverse-tNx6.aternos.me",
     "port": 31907,
     "version": "1.21.1"
   },
-
-  "admin": {
-    "username": ".CosmicEntity24"
+  "utils": {
+    "auto-auth": {
+      "enabled": true,
+      "password": "CHANGE_THIS_PASSWORD"
+    },
+    "anti-afk": {
+      "enabled": true,
+      "sneak": true
+    },
+    "chat-messages": {
+      "enabled": false,
+      "repeat": false,
+      "repeat-delay": 60000,
+      "messages": [
+        "I'm a regular player",
+        "Subscribe to Perzaan Gaming!",
+        "I like to play Minecraft!"
+      ]
+    },
+    "chat-log": true,
+    "auto-reconnect": true,
+    "auto-reconnect-delay": 5000,
+    "max-reconnect-delay": 30000
   },
-
-  "autoAuth": {
-    "enabled": false,
-    "password": "",
-    "command": "/login {password}"
-  },
-
-  "antiAfk": {
-    "enabled": true,
-    "intervalSeconds": 30
-  },
-
   "movement": {
     "enabled": true,
-    "intervalSeconds": 60
+    "circle-walk": {
+      "enabled": true,
+      "radius": 4,
+      "speed": 3000
+    },
+    "look-around": {
+      "enabled": true,
+      "interval": 5000
+    },
+    "random-jump": {
+      "enabled": true,
+      "interval": 10000
+    }
   },
-
-  "discord": {
-    "webhookUrl": ""
+  "chat": {
+    "respond": false
+  },
+  "admin": {
+    "username": "CosmicEntity24"
   }
 }
