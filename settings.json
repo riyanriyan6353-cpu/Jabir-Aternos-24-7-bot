@@ -1,0 +1,45 @@
+{
+  "name": "Aternos AFK Bot",
+  "bot-account": {
+    "username": "PerzaanLive",
+    "password": "",
+    "type": "offline"
+  },
+  "server": {
+    "ip": "YOUR-ATERNOS-SERVER.aternos.me",
+    "port": 25565,
+    "version": false
+  },
+  "utils": {
+    "auto-auth": {
+      "enabled": false,
+      "password": "CHANGE_THIS_PASSWORD"
+    },
+    "anti-afk": {
+      "enabled": true,
+      "sneak": true
+    },
+    "chat-log": true,
+    "auto-reconnect": true,
+    "auto-reconnect-delay": 5000,
+    "max-reconnect-delay": 30000
+  },
+  "movement": {
+    "enabled": true,
+    "circle-walk": {
+      "enabled": true,
+      "speed": 3000
+    },
+    "look-around": {
+      "enabled": true,
+      "interval": 5000
+    },
+    "random-jump": {
+      "enabled": true,
+      "interval": 10000
+    }
+  },
+  "admin": {
+    "username": "CosmicEntity24"
+  }
+}
