@@ -8,7 +8,7 @@
   "server": {
     "ip": "JADUMANTARjbw9.aternos.me",
     "port": 25511,
-    "version": 1.20.1"
+    "version": 1.20"
   },
   "utils": {
     "auto-auth": {
